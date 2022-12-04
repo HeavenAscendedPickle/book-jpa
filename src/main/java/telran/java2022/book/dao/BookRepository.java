@@ -11,7 +11,5 @@ public interface BookRepository extends CrudRepository<Book, String> {
     Stream<Book> findByPublisherPublisherName(String name);
     
     Stream<Book> findByAuthorsName(String name);
-    
-    void deleteAllByAuthorsName(String name);
 
 }
